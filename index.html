@@ -66,9 +66,12 @@ I wasn&#39;t expecting a new visitor to come to this place...
 
 I don&#39;t even understand how someone can come here to the depths of this abandoned place.
 
-Oh sorry I&#39;m a bit of a werido talking to someone who&#39;s unconscious, I just don&#39;t understand I thought this place was gone, noone can reach something that doesn&#39;t exist right? And yet I and others are here abandoned in this `(colour:red)[Hollow Place]` we live in.
+Oh sorry, I&#39;m a bit of a weirdo talking to someone who&#39;s unconscious. I just don&#39;t understand, I thought this place was gone! No one can reach something that doesn&#39;t exist right? Yet I and others are abandoned here...
 `
-[[wake up]]
+
+`
+`
+(button:)[[wake up]]
 ]
 (else:)[
 `wrong passcode try again.`
@@ -81,45 +84,23 @@ Oh sorry I&#39;m a bit of a werido talking to someone who&#39;s unconscious, I j
 
 (if: $setup is not 1 or $passcode is not &quot;MyBrainSucks&quot;)[
 (input-box:2bind $passcode,&quot;=XX=&quot;,1,&quot;MyBrainSucks&quot;)
-[[submit|mindworld]]
-]</tw-passagedata><tw-passagedata pid="6" name="say hi" tags="" position="900,825" size="100,100">Oh hello there do you feel alright?
-
-Your throat sounds dry, I&#39;ll get you some water.
-
-Do you feel better now?
-
-[[sort of, I wish my feet were less dusty]]
-
-[[ask what this place is]]</tw-passagedata><tw-passagedata pid="7" name="ask what this place is" tags="" position="975,950" size="100,100">Wait you don&#39;t know anything about this place?
+(button:)[[submit|mindworld]]
+]</tw-passagedata><tw-passagedata pid="6" name="ask what this place is" tags="" position="975,950" size="100,100">Wait you don&#39;t know anything about this place?
 
 We call this place The Hollow I don&#39;t know to much about the history of this place, but what I&#39;ve heard is that this place used to be a bustling realm where there were different worlds within it with different cultures and races of people. But one day we were abandoned by our creator.
 
 
-&lt;!-- Put this somewhere else
+(button:)[[Oh no...|the WORM problem]]
+(set: $pg3v1 to 1)</tw-passagedata><tw-passagedata pid="7" name="wake up" tags="" position="900,700" size="100,100">You get up and open your eyes.
 
-Without our creator, life was dwindling and the tunnels that were once the connections between our worlds are now caging us within, leaving us lost and disconnected.
+You look around and it&#39;s almost total darkness.
 
-Since the tunnels kept us apart, we have dealt with people suddenly going missing, both of my dads went missing causing me to get adopted by a new family. I know a new person that ended up here though his name is Erial I&#39;m guessing he got here by two tunnels one in our town and one where he was reconnecting momentarily and he was able to get through in time.
+There is feeling of stone underneath your bare feet, it feels dusty and dry.
 
---&gt;
+Then you notice a person, they look shocked and you sense that they want to talk.
 
-[[Oh no...|the WORM problem]]</tw-passagedata><tw-passagedata pid="8" name="sort of, I wish my feet were less dusty" tags="" position="825,950" size="100,100">You don&#39;t have shoes on?
 
-This place is filled with dust and sharp stones. I think I have an extra pair of shoes and socks in my backpack.
-
-(text-colour:green)[Why is my backpack so full?] I was staying out of my house for a while.
-
-Now... let&#39;s try getting back to my place there&#39;s some good food there.
-
-[[proceed|the WORM problem]]</tw-passagedata><tw-passagedata pid="9" name="wake up" tags="" position="900,700" size="100,100">You get up and you open your eyes.
-
-You look around you and all you see is darkness and a little bit of stone.
-
-You can feel stone to underneath your bare feet it feels dusty and dry.
-
-You then see the person (not sure if it&#39;s a man or a women), they look very shocked and look like they want to talk to you.
-
-[[say hi]]</tw-passagedata><tw-passagedata pid="10" name="the WORM problem" tags="" position="900,1100" size="100,100">Oh no! NO NO NO NO NOT NOW!!!
+(button:)[[say hello]]</tw-passagedata><tw-passagedata pid="8" name="the WORM problem" tags="" position="900,1100" size="100,100">Oh no! NO NO NO NO NOT NOW!!!
 
 It can&#39;t be.
 
@@ -127,16 +108,18 @@ I... I thought it would just stay open for little longer...
 
 This is a big problem!
 
-[[what problem?]]</tw-passagedata><tw-passagedata pid="11" name="what problem?" tags="" position="900,1225" size="100,100">This! Can&#39;t you see, there is no way out.
+
+(button:)[[what problem?]]</tw-passagedata><tw-passagedata pid="9" name="what problem?" tags="" position="900,1225" size="100,100">This! Can&#39;t you see, there is no way out.
 
 You hear them bang their fists against the stone walls, scratching themselves and...
 a bit of crying.
 
 The tunnels must&#39;ve closed up on us again.
 
-[[what tunnels?]]</tw-passagedata><tw-passagedata pid="12" name="what tunnels?" tags="" position="900,1350" size="100,100">This is all my fault isn&#39;t it. I&#39;m the reason why we&#39;re here.
 
-Here I&#39;ll tell you what really happens around here.
+(button:)[[what tunnels?]]</tw-passagedata><tw-passagedata pid="10" name="what tunnels?" tags="" position="900,1350" size="100,100">This is all my fault isn&#39;t it! I&#39;m the reason why we&#39;re here!
+
+Okay I&#39;m going to tell you what really happens around here.
 
 Or maybe I&#39;ll show you that probably makes more sense.
 
@@ -150,9 +133,11 @@ You see that right there that&#39;s me with you...
 and that&#39;s my home up there.
 This was when I... ran away from home and found you.
 
-I can&#39;t talk more I feel so shameful and... I can&#39;t find the energy.
-[[Hey there it&#39;s alright!]]
-[[Okay I know you&#39;re tired but I need your help.]]</tw-passagedata><tw-passagedata pid="13" name="Okay I know you&#39;re tired but I need your help." tags="" position="975,1475" size="100,100">Okay I&#39;ll try to... just let me breathe for a few seconds and then I&#39;ll continue.
+I can&#39;t talk more I feel so ashamed and... I can&#39;t find the energy.
+
+
+(button:)[[Comfort them|Tell them it&#39;s not their fault...]]
+(button:)[[Snap them out of it|Okay I know you&#39;re tired but I need your help.]]</tw-passagedata><tw-passagedata pid="11" name="Okay I know you&#39;re tired but I need your help." tags="" position="975,1475" size="100,100">Okay I&#39;ll try to... just let me breathe for a few seconds and then I&#39;ll continue.
 &lt;img src=&quot;imgs/4.png&quot;
 
 width=&quot;100%&quot;
@@ -166,9 +151,93 @@ width=&quot;100%&quot;
 
 height=&quot;100%&quot;
 /&gt;
-Do this I suppose.</tw-passagedata><tw-passagedata pid="14" name="Grab their arm right before they stab themselves" tags="" position="900,1600" size="100,100"></tw-passagedata><tw-passagedata pid="15" name="Hey there it&#39;s alright!" tags="" position="825,1475" size="100,100">
-[[Stop]] 
-[[...|Grab their arm right before they stab themselves]]</tw-passagedata><tw-passagedata pid="16" name="Stop" tags="" position="750,1600" size="100,100"></tw-passagedata></tw-storydata>
+Do this I suppose.</tw-passagedata><tw-passagedata pid="12" name="Tell them it&#39;s not their fault..." tags="" position="825,1475" size="100,100">But we&#39;re trapped here forever.
+
+I just... it&#39;s not alright. I&#39;m the reason we&#39;re trapped down here.
+
+What you don&#39;t think it&#39;s my fault.
+
+You&#39;re saying that you would&#39;ve woken up there regardless and would still be lost.
+
+Yeah I guess you&#39;re right, it just gets hard for me. I&#39;ve never really had a happy life. It&#39;s as if everything I do leads to something worse for everyone.
+
+Maybe I should just give up.
+{
+(if: $pg3v1 is 1)[
+(button:)[[Can you tell me more about this place?]]
+]
+`
+`
+(button:)[[No we can&#39;t give up!]]
+}</tw-passagedata><tw-passagedata pid="13" name="No we can&#39;t give up!" tags="" position="750,1600" size="100,100">Well in fact I already have.
+
+(text-colour:yellow)[You&#39;re asking me what I meant by that?] I...
+{(text-colour:red)[
+`stopped caring a long time ago. About me, about my &quot;friends&quot;. I thought it was the right thing to do, to let go of all my problems. To serve instead of worry...`
+]}
+
+{(text-colour:green)[
+`Then suddenly I felt this urge to escape. I started to feel again.`
+]}
+
+{(text-colour:red)[
+`I felt this rush of shame. If I just stuck with them before it was too late. Well we wouldn&#39;t have...`]} fallen out!
+
+I... tried to bury them down. But I knew my essence was leading me somewhere else then here.
+
+{(text-colour:grey)[
+`But now I just feel stuck. I&#39;m in a dark corrupt place in the middle of nowhere and I start to feel this pointlessness again. I&#39;ve lost hope but I wouldn&#39;t call this feeling that I&#39;m having dark I think it just gives me this dull feeling. I&#39;m not going to cry on the ground because of being trapped here, There&#39;s no point about worrying about it, I&#39;ve got better things to mad at myself about.`
+]}
+
+{(text-colour:red)[
+`Like myself.`
+]}
+
+[[proceed]]</tw-passagedata><tw-passagedata pid="14" name="say hello" tags="" position="900,825" size="100,100">Oh! Hello there, do you feel alright?
+
+Your throat sounds dry, I&#39;ll get you some water.
+
+Do you feel better now?
+
+
+(button:)[[a bit, except for my dirty bare feet]]
+
+(button:)[[ask what this place is]]</tw-passagedata><tw-passagedata pid="15" name="a bit, except for my dirty bare feet" tags="" position="825,950" size="100,100">You don&#39;t have shoes on?
+
+This place is filled with dust and sharp stones. I think I have an extra pair of shoes and socks in my backpack.
+
+(text-colour:yellow)[Why is my backpack so full?] I was staying out of my house for a while.
+
+Now... let&#39;s try getting back to my place there&#39;s some good food there.
+
+
+(button:)[[proceed|the WORM problem]]
+(set: $pg3v1 to 0)</tw-passagedata><tw-passagedata pid="16" name="Can you tell me more about this place?" tags="" position="875,1600" size="100,100">(text-colour:red)[Can you just... let me be. Please!
+I don&#39;t feel like I can explain it right now!]
+
+[[I need to know about this place, I need to escape!]]</tw-passagedata><tw-passagedata pid="17" name="I need to know about this place, I need to escape!" tags="" position="875,1725" size="100,100">(text-colour:red)[Oh yeah you want to escape don&#39;t you.
+
+Well I don&#39;t think me giving you a history lesson is going to change anything in the present. But I guess if you&#39;re so insistent I can tell you a little more.]
+
+So, Without our creator, life was dwindling and the tunnels that were once the connections between our worlds are now caging us within, leaving us lost and disconnected.
+
+Since the tunnels kept us apart, we have dealt with people suddenly going missing, both of my dads went missing causing me to get adopted by a new family. I know a new person that ended up here, his name is Erial I&#39;m guessing he got here by two tunnels one in our town and one where he was reconnecting momentarily and he was able to get through in time.]</tw-passagedata><tw-passagedata pid="18" name="proceed" tags="" position="750,1725" size="100,100">A tunnel opens.
+
+And then another tunnel.
+
+You can hear sounds from everywhere around you now. Whining, crying, and yelling from a bunch of people though most of them seem to be children. You also faintly hear a bondfire.
+
+You get curious and start to run through the lively tunnel but Cloie stops you from getting farther.
+
+Just then she says something.
+
+I don&#39;t think you should go through there. Look at me! I know I was giving up a second ago but I think we shouldn&#39;t go back to the village. I think that we should go through this tunnel, I&#39;ve been in that village for a long time and it hasn&#39;t given me a life, All I&#39;ve had there was to strave and to feel trapped forever. I don&#39;t want to live that life and I&#39;m sure you don&#39;t to live that life either.
+
+So unless you want to be trapped with the whining, crying, and yelling in a village that has lost all hope. You should come with me.
+
+[[Stay at the village]]
+
+[[Visit the village to get some food]]</tw-passagedata><tw-passagedata pid="19" name="Stay at the village" tags="" position="675,1850" size="100,100"></tw-passagedata><tw-passagedata pid="20" name="Visit the village to get some food" tags="" position="800,1850" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
