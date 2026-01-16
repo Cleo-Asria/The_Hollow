@@ -162,6 +162,8 @@ You&#39;re saying that you would&#39;ve woken up there regardless and would stil
 Yeah I guess you&#39;re right, it just gets hard for me. I&#39;ve never really had a happy life. It&#39;s as if everything I do leads to something worse for everyone.
 
 Maybe I should just give up.
+
+
 {
 (if: $pg3v1 is 1)[
 (button:)[[Can you tell me more about this place?]]
@@ -193,7 +195,8 @@ I... tried to bury them down. But I knew my essence was leading me somewhere els
 `Like myself.`
 ]}
 
-[[proceed]]</tw-passagedata><tw-passagedata pid="14" name="say hello" tags="" position="900,825" size="100,100">Oh! Hello there, do you feel alright?
+
+(button:)[[proceed]]</tw-passagedata><tw-passagedata pid="14" name="say hello" tags="" position="900,825" size="100,100">Oh! Hello there, do you feel alright?
 
 Your throat sounds dry, I&#39;ll get you some water.
 
@@ -235,9 +238,14 @@ I don&#39;t think you should go through there. Look at me! I know I was giving u
 
 So unless you want to be trapped with the whining, crying, and yelling in a village that has lost all hope. You should come with me.
 
-[[Stay at the village]]
+{
+(button:)[[Stay at the village]]
+`
+`
+(button:)[[Visit the village to get some food]]
+}</tw-passagedata><tw-passagedata pid="19" name="Stay at the village" tags="" position="675,1850" size="100,100"></tw-passagedata><tw-passagedata pid="20" name="Visit the village to get some food" tags="" position="800,1850" size="100,100">You&#39;re hungry?!
 
-[[Visit the village to get some food]]</tw-passagedata><tw-passagedata pid="19" name="Stay at the village" tags="" position="675,1850" size="100,100"></tw-passagedata><tw-passagedata pid="20" name="Visit the village to get some food" tags="" position="800,1850" size="100,100"></tw-passagedata></tw-storydata>
+Well I guess we can go to the village and get some food, water and supplies. But that&#39;s it after that we got to leave the village and escape.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
