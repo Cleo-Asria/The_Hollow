@@ -9,115 +9,46 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play The Hollow.</tw-noscript></noscript></tw-story>
-<tw-storydata name="The Hollow" startnode="5" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="5A2F55BB-C7F8-45AE-937B-2A2F628A9F58" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="gg" color="blue"></tw-tag><tw-passagedata pid="1" name="home" tags="" position="1300,700" size="100,100">### G0At&#39;S Website
-[[home]] | [[bio]] | [[posts]] | [[forum]] | [[mindworld]]
+<tw-storydata name="The Hollow" startnode="57" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="5A2F55BB-C7F8-45AE-937B-2A2F628A9F58" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="gg" color="blue"></tw-tag><tw-passagedata pid="1" name="ask what this place is" tags="" position="975,1075" size="100,100">(text-colour:yellow)[Wait you don&#39;t know anything about this place?
 
-Welcome to my website, my name is Haker and I like playing mindworld going on forums and going on cool websites that I will add to my RSS feed. I haven&#39;t made an RSS feed yet because I haven&#39;t learned XML, but soon I will have an RSS feed for you. Some other things I like to do is talk about myself and code my own things like this website.
-
-If you want to find out more about me you can go onto my bio go on the forum, or visit my mindworld if you have access to it.</tw-passagedata><tw-passagedata pid="2" name="posts" tags="" position="1500,700" size="100,100">{=
-(text-colour:yellow)[
-### Posts
-]
-&lt;hr&gt;
-(text-colour:orange)[
-#### Hello World
-dis
-
-#### Hello World
-dis
-
-#### My Mindworld
-I did something cool in my mindworld today. I created an underground wooden forest inspired by a book called WildWood...
-
-#### Hello World
-This is my first post on here, I plan on making more posts in the future but for now I&#39;ll just talk about my day.
-
-Today I was sick so I had to stay at home all day. It was kind of boring but I did make some art and I got to work on my mindworld a little. Oh yeah I have some art that I can show you!
-`
-`
-&lt;img src=&quot;imgs/0.png&quot;
-
-width=&quot;25%&quot;
-
-height=&quot;25%&quot;
-/&gt;
-
-&lt;img src=&quot;imgs/1.jpeg&quot;
-
-width=&quot;25%&quot;
-
-height=&quot;25%&quot;
-/&gt;
-
-&lt;img src=&quot;imgs/2.jpeg&quot;
-
-width=&quot;25%&quot;
-
-height=&quot;25%&quot;
-/&gt;
-`
-`
-]</tw-passagedata><tw-passagedata pid="3" name="bio" tags="" position="1300,500" size="100,100"></tw-passagedata><tw-passagedata pid="4" name="forum" tags="" position="1300,900" size="100,100"></tw-passagedata><tw-passagedata pid="5" name="mindworld" tags="" position="1100,700" size="100,100">{=
-(if: $setup is 1)[
-(if: $passcode is &quot;MyBrainSucks&quot;)[
-`Hello... Hello!
-
-I wasn&#39;t expecting a new visitor to come to this place...
-
-I don&#39;t even understand how someone can come here to the depths of this abandoned place.
-
-Oh sorry, I&#39;m a bit of a weirdo talking to someone who&#39;s unconscious. I just don&#39;t understand, I thought this place was gone! No one can reach something that doesn&#39;t exist right? Yet I and others are abandoned here...
-`
-
-`
-`
-(button:)[[wake up]]
-]
-(else:)[
-`wrong passcode try again.`
-]
-]
-(else:)[
-`what is the passcode?`
-(set: $setup to 1)
-]
-
-(if: $setup is not 1 or $passcode is not &quot;MyBrainSucks&quot;)[
-(input-box:2bind $passcode,&quot;=XX=&quot;,1,&quot;MyBrainSucks&quot;)
-(button:)[[submit|mindworld]]
-]</tw-passagedata><tw-passagedata pid="6" name="ask what this place is" tags="" position="975,950" size="100,100">Wait you don&#39;t know anything about this place?
-
-We call this place The Hollow I don&#39;t know to much about the history of this place, but what I&#39;ve heard is that this place used to be a bustling realm where there were different worlds within it with different cultures and races of people. But one day we were abandoned by our creator.
+{
+(b4r:&quot;solid&quot;)+(b4r-colour:white,white,grey,grey)+(css: &quot;padding: 1%&quot;)[
+We call this place The Hollow. I don&#39;t know too much about the history of this place, but what I&#39;ve heard is that this place used to be a normal world with cities, wildlife, and all the things a normal world would have. However, one day we were abandoned by our creator...]
+}]
 
 
 (button:)[[Oh no...|the WORM problem]]
-(set: $pg3v1 to 1)</tw-passagedata><tw-passagedata pid="7" name="wake up" tags="" position="900,700" size="100,100">You get up and open your eyes.
 
-You look around and it&#39;s almost total darkness.
+(set: $temp to 1)</tw-passagedata><tw-passagedata pid="2" name="wake up" tags="" position="900,700" size="100,100">You get up and open your eyes. 
+ 
+You look around and it&#39;s almost total darkness. 
+ 
+There is a feeling of stone underneath your bare feet; it feels dusty and dry. 
+ 
+Then you notice a person, they look shocked and you sense that they want to talk. 
+ 
+ 
+(button:)[[say hello]] </tw-passagedata><tw-passagedata pid="3" name="the WORM problem" tags="" position="900,1200" size="100,100">(text-colour:yellow)[Oh no! NO NO NO NO NOT NOW! 
 
-There is feeling of stone underneath your bare feet, it feels dusty and dry.
+It can&#39;t be. 
 
-Then you notice a person, they look shocked and you sense that they want to talk.
+I... I thought it would just stay open for a little longer... 
 
-
-(button:)[[say hello]]</tw-passagedata><tw-passagedata pid="8" name="the WORM problem" tags="" position="900,1100" size="100,100">Oh no! NO NO NO NO NOT NOW!!!
-
-It can&#39;t be.
-
-I... I thought it would just stay open for little longer...
-
-This is a big problem!
-
-
-(button:)[[what problem?]]</tw-passagedata><tw-passagedata pid="9" name="what problem?" tags="" position="900,1225" size="100,100">This! Can&#39;t you see, there is no way out.
-
-You hear them bang their fists against the stone walls, scratching themselves and...
-a bit of crying.
-
-The tunnels must&#39;ve closed up on us again.
+This is a big problem!] 
 
 
-(button:)[[what tunnels?]]</tw-passagedata><tw-passagedata pid="10" name="what tunnels?" tags="" position="900,1350" size="100,100">This is all my fault isn&#39;t it! I&#39;m the reason why we&#39;re here!
+(button:)[[what problem?]] </tw-passagedata><tw-passagedata pid="4" name="what problem?" tags="" position="900,1325" size="100,100">(text-colour:yellow)[This! Can&#39;t you see, there is no way out. 
+
+You hear them bang their fists against the stone walls, 
+
+scratching themselves and... 
+
+a bit of crying. 
+
+The tunnels must&#39;ve closed on us again.] 
+
+
+(button:)[[what tunnels?]] </tw-passagedata><tw-passagedata pid="5" name="what tunnels?" tags="" position="900,1450" size="100,100">(text-colour:yellow)[This is all my fault isn&#39;t it! I&#39;m the reason why we&#39;re here!
 
 Okay I&#39;m going to tell you what really happens around here.
 
@@ -129,123 +60,828 @@ width=&quot;100%&quot;
 
 height=&quot;100%&quot;
 /&gt;
+
 You see that right there that&#39;s me with you...
 and that&#39;s my home up there.
 This was when I... ran away from home and found you.
 
-I can&#39;t talk more I feel so ashamed and... I can&#39;t find the energy.
+I can&#39;t talk more I feel so ashamed and... I can&#39;t find the energy.]
 
 
-(button:)[[Comfort them|Tell them it&#39;s not their fault...]]
-(button:)[[Snap them out of it|Okay I know you&#39;re tired but I need your help.]]</tw-passagedata><tw-passagedata pid="11" name="Okay I know you&#39;re tired but I need your help." tags="" position="975,1475" size="100,100">Okay I&#39;ll try to... just let me breathe for a few seconds and then I&#39;ll continue.
+(button:)[[Comfort them|tell them it&#39;s not their fault...]]
+(button:)[[Snap them out of it|okay I know you&#39;re tired but I need your help.]]
+
+(text-colour:yellow)[This is all my fault isn&#39;t it! I&#39;m the reason why we&#39;re here! 
+
+Okay I&#39;m going to tell you what really happens around here. 
+
+Or maybe I&#39;ll show you that probably makes more sense. 
+
+&lt;img src=&quot;imgs/3.png&quot; 
+
+  
+
+width=&quot;100%&quot; 
+
+  
+
+height=&quot;100%&quot; 
+
+/&gt; 
+
+You see that right there, that&#39;s me with you... 
+
+and that&#39;s my home up there. 
+
+This was when I... ran away from home and found you. 
+
+I can&#39;t talk more I feel so ashamed and... I can&#39;t find the energy.] 
+
+
+(button:)[[Comfort them|tell them it&#39;s not their fault...]] 
+
+(button:)[[Snap them out of it|okay I know you&#39;re tired but I need your help.]] </tw-passagedata><tw-passagedata pid="6" name="okay I know you&#39;re tired but I need your help." tags="" position="975,1575" size="100,100">{
+(set: $temp to 2)
+}
+(text-colour:yellow)[Okay, I&#39;ll try to... just let me breathe for a few seconds, and then I&#39;ll continue.
+
 &lt;img src=&quot;imgs/4.png&quot;
 
 width=&quot;100%&quot;
 
 height=&quot;100%&quot;
 /&gt;
-Okay I&#39;m good now I&#39;ll continue my explanation of this place. Where was I again? Soon after, the temporary tunnels that led me to you closed and now we can&#39;t get back home! Even if a tunnel opens up again we could be going in the wrong direction. Or it could even...
+
+Okay, I&#39;m good now. I&#39;ll continue my explanation of this place. Where was I again?... Soon after I ran, the temporary tunnels that led me to you closed, and now we can&#39;t get back home! Even if a tunnel opens up again, we could be going in the wrong direction. Or it could even...
+
 &lt;img src=&quot;imgs/5.png&quot;
 
 width=&quot;100%&quot;
 
 height=&quot;100%&quot;
 /&gt;
-Do this I suppose.</tw-passagedata><tw-passagedata pid="12" name="Tell them it&#39;s not their fault..." tags="" position="825,1475" size="100,100">But we&#39;re trapped here forever.
+
+Do this.]
+
+[[can you tell me more about this place?|I need to know about this place, I need to escape!]]</tw-passagedata><tw-passagedata pid="7" name="tell them it&#39;s not their fault..." tags="" position="800,1575" size="100,100">(text-colour:yellow)[But we&#39;re trapped here forever.
 
 I just... it&#39;s not alright. I&#39;m the reason we&#39;re trapped down here.
 
-What you don&#39;t think it&#39;s my fault.
+What don&#39;t you think it&#39;s my fault?
 
 You&#39;re saying that you would&#39;ve woken up there regardless and would still be lost.
 
-Yeah I guess you&#39;re right, it just gets hard for me. I&#39;ve never really had a happy life. It&#39;s as if everything I do leads to something worse for everyone.
+Yeah, I guess you&#39;re right, it just gets hard for me. I&#39;ve never really had a happy life; it&#39;s as if everything I do leads to something worse for everyone.
 
-Maybe I should just give up.
+Maybe I should just give up.]
 
 
 {
-(if: $pg3v1 is 1)[
-(button:)[[Can you tell me more about this place?]]
+(if: $temp is 1)[
+(button:)[[can you tell me more about this place?]]
+`
+`
 ]
+(button:)[[no we can&#39;t give up!]]
+}</tw-passagedata><tw-passagedata pid="8" name="no we can&#39;t give up!" tags="" position="725,1700" size="100,100">(text-colour:yellow)[Well in fact I already have.
+
+(text-colour:lime)[You&#39;re asking me what I meant by that?] I...
+
+stopped caring a long time ago. About me, about my &quot;friends&quot;. I thought it was the right thing to do to let go of all my problems. To serve instead of worry...
+
+Then, suddenly, I felt an urge to escape. I started to feel again.
+
+I felt this rush of shame. If I just stuck with them before it was too late. Well, we wouldn&#39;t have... fallen out!
+
+I... tried to bury them down. But I knew my &quot;essence&quot; was leading me somewhere else then here.
+
+But now I just feel stuck. I&#39;m in a dark, corrupt place, like I&#39;m in the middle of nowhere, and I start to feel this pointlessness again. I&#39;ve lost hope, but I wouldn&#39;t call this feeling dark; I think it just leaves me feeling dull. I&#39;m not going to cry on the ground because of being trapped here. There&#39;s no point in worrying about it.]
+
+{(text-colour:red)[
+`I&#39;ve got better things to be mad at myself about.`
+]}
+
+
+(button:)[[NO!]]</tw-passagedata><tw-passagedata pid="9" name="say hello" tags="" position="900,825" size="100,100">(text-colour:yellow)[Oh! Hello there, do you feel alright? 
+
+Your throat sounds dry; I&#39;ll get you some water...] 
+
+
+(button:)[[drink the water]] </tw-passagedata><tw-passagedata pid="10" name="a bit, except for my dirty bare feet" tags="" position="825,1075" size="100,100">(text-colour:yellow)[You don&#39;t have shoes on? 
+
+This place is filled with dust and sharp stones. I think I have an extra pair of shoes and socks in my backpack. 
+
+(text-colour:lime)[Why is my backpack so full?] I was staying out of my house for a while. 
+
+Now... let&#39;s try getting back to my place, there&#39;s some good food there.] 
+
+(button:)[[proceed|the WORM problem]] 
+(set: $temp to 0)</tw-passagedata><tw-passagedata pid="11" name="can you tell me more about this place?" tags="" position="875,1700" size="100,100">(text-colour:red)[Can you just... let me be. Please!
+I don&#39;t feel like I can explain it right now!]
+
+[[I need to know about this place, I need to escape!]]</tw-passagedata><tw-passagedata pid="12" name="I need to know about this place, I need to escape!" tags="" position="925,1850" size="100,100">(text-colour:red)[Oh yeah you want to escape don&#39;t you.]
+
+(text-colour:yellow)[Well, I don&#39;t think my history lesson to you is going to change anything in the present. But I guess if you&#39;re so insistent, I can tell you a little more.
+
+{
+(b4r:&quot;solid&quot;)+(b4r-colour:white,white,grey,grey)+(css: &quot;padding: 1%&quot;)[
+So, without our creator, life was dwindling, the land started shifting, and tunnels were made; we were left lost and disconnected.
+
+Since the tunnels kept us apart, we have dealt with people suddenly going missing; both of my dads went missing, causing me to get adopted by a new family. I know a new person who ended up at my village, his name is Erial. I&#39;m guessing he got here by two tunnels, one in our town and one where he was reconnecting momentarily, and he was able to get through in time.
+]
+}]
+
+(text-colour:red)[Well, on a scale 1 to 5 how much did my lesson help you escape?]
+
+(text-colour:red)[(text-colour:lime)[Not at all?] Well, look around, were stuck here, I can&#39;t just say some magic words, and suddenly we&#39;re free!]
+
+(text-colour:yellow)[Maybe I&#39;ll just give up.]
+
+
+(button:)[[no we can&#39;t give up!]]</tw-passagedata><tw-passagedata pid="13" name="the change" tags="" position="725,1950" size="100,100">A tunnel opens.
+
+And then another tunnel.
+
+You can hear sounds from everywhere around you now. Whining, crying, and yelling from a bunch of people, though most of them seem to be children. You also faintly hear a bonfire.
+
+You get curious and start to run through the lively tunnel, but Cloie stops you from getting farther.
+
+Just then, she says something.
+
+(text-colour:yellow)[I don&#39;t think you should go through there. Look at me! I know I was giving up a second ago, but I think we shouldn&#39;t go back to the village. I think that we should go through this tunnel. I&#39;ve been in that village for a long time, and it hasn&#39;t given me a life; all you get in the village is starvation and feeling trapped. I don&#39;t want to live that life, and I&#39;m sure you don&#39;t want to live that life either.
+
+So, unless you want to be trapped with the whining, crying, and yelling in a village that has lost all hope. You should come with me.]
+
+
+(button:)[[leave the village]]</tw-passagedata><tw-passagedata pid="14" name="leave the village" tags="" position="800,2075" size="100,100">(text-colour:yellow)[Thank you for listening to me. You don&#39;t know how much this means to me. I haven&#39;t felt this listened to in a long time. Not since the beginning...
+
+I must say it feels nice to have a friend coming with me, wait a second, if were going to be travelling, we should know each other&#39;s names, especially if one of us gets lost.
+
+So what&#39;s your name?]
+
+You look back at the village one last time, then you hear the parents telling the children to be quiet. In unison, you hear this big crack, and all the children are silent.
+
+Just then, Cloie reminds you of what you were doing. You then go through the tunnel. Soon after it closes.
+
+(button:)[[my name is...]]</tw-passagedata><tw-passagedata pid="15" name="my name is..." tags="" position="800,2200" size="100,100">(text-colour:yellow)[Well, Avril, it&#39;s time I&#39;ve told you my name, my name is Cloie.
+
+I should also tell you to be careful here.
+
+Even though we’re out of the village, there are reasons that have kept me from going. There is a great danger outside the village. There is a man who runs The Hollow; we don&#39;t speak his real name, but the people call him The Dastardly Man. He&#39;ll try his best to make sure that if we leave our settlements (text-colour:red)[we&#39;ll die.] But I&#39;m not going to let that happen, and even if that does happen, living there is worse than death.]
+
+You see her shuffling through her backpack until she finds some weapons, a knife, a gun, a lighter, and a bow and arrow.
+
+Here, you&#39;re going to need these weapons on the road. Especially the lighter and bow, some things in The Hollow are really big like the worms, but if you light an arrow and aim it at the target (text-colour:red)[it&#39;ll burn to a crisp.]
+
+(text-colour:yellow)[As she gives the weapons to you, you get nervous; you&#39;ve never held a weapon before, and that gun felt so cold that it sent shivers down your spine. Along with this comes the memory of someone telling you to never fight, to always be peaceful. What should you say?]
+
+
+(button:)[[should I really be having these weapons?]]
+(button:)[[I&#39;ve never had a weapon before, I feel kinda nervous|should I really be having these weapons?]]
+{(set: $items to (a: &#39;sword-lv1&#39;, &#39;gun-lv1&#39;, &#39;bow-lv1&#39;, &#39;arrow-x64&#39;, &#39;lighter-lv1&#39;))
+(for: each _item, ...$items) [
+(text-colour:grey)+(bg:white)[You got the _item!]`
 `
-`
-(button:)[[No we can&#39;t give up!]]
-}</tw-passagedata><tw-passagedata pid="13" name="No we can&#39;t give up!" tags="" position="750,1600" size="100,100">Well in fact I already have.
-
-(text-colour:yellow)[You&#39;re asking me what I meant by that?] I...
-{(text-colour:red)[
-`stopped caring a long time ago. About me, about my &quot;friends&quot;. I thought it was the right thing to do, to let go of all my problems. To serve instead of worry...`
-]}
-
-{(text-colour:green)[
-`Then suddenly I felt this urge to escape. I started to feel again.`
-]}
-
-{(text-colour:red)[
-`I felt this rush of shame. If I just stuck with them before it was too late. Well we wouldn&#39;t have...`]} fallen out!
-
-I... tried to bury them down. But I knew my essence was leading me somewhere else then here.
-
-{(text-colour:grey)[
-`But now I just feel stuck. I&#39;m in a dark corrupt place in the middle of nowhere and I start to feel this pointlessness again. I&#39;ve lost hope but I wouldn&#39;t call this feeling that I&#39;m having dark I think it just gives me this dull feeling. I&#39;m not going to cry on the ground because of being trapped here, There&#39;s no point about worrying about it, I&#39;ve got better things to mad at myself about.`
-]}
-
-{(text-colour:red)[
-`Like myself.`
-]}
-
-
-(button:)[[proceed]]</tw-passagedata><tw-passagedata pid="14" name="say hello" tags="" position="900,825" size="100,100">Oh! Hello there, do you feel alright?
-
-Your throat sounds dry, I&#39;ll get you some water.
-
-Do you feel better now?
+]}</tw-passagedata><tw-passagedata pid="16" name="drink the water" tags="" position="900,950" size="100,100">(text-colour:yellow)[Do you feel better now?]
 
 
 (button:)[[a bit, except for my dirty bare feet]]
 
-(button:)[[ask what this place is]]</tw-passagedata><tw-passagedata pid="15" name="a bit, except for my dirty bare feet" tags="" position="825,950" size="100,100">You don&#39;t have shoes on?
+(button:)[[ask what this place is]]</tw-passagedata><tw-passagedata pid="17" name="NO!" tags="" position="725,1825" size="100,100">(text-colour:cyan)[NO!!!! This can&#39;t be happening, you can&#39;t be serious, if you don&#39;t feel hope, then I will.]
 
-This place is filled with dust and sharp stones. I think I have an extra pair of shoes and socks in my backpack.
+(text-colour:yellow)[It&#39;s... you&#39;ve, sigh...]
 
-(text-colour:yellow)[Why is my backpack so full?] I was staying out of my house for a while.
+(text-colour:cyan)[YOU really aren&#39;t going to just let me die, are you? I came here and want to get out for a reason, and I&#39;m not going to let you take it away.]
 
-Now... let&#39;s try getting back to my place there&#39;s some good food there.
+(text-colour:yellow)[Wha...]
+
+(text-colour:cyan)[So tell me, how are we going to get out of here.]
+
+(text-colour:cyan)[TELL ME NOOOOOW!]
+
+(text-colour:yellow)[Okay, I&#39;m sorry! I&#39;m really sorry, I didn&#39;t mean to hurt more people.]
+
+(text-colour:cyan)[You still don&#39;t think there&#39;s a way out, do you, I can see it!]
+
+(text-colour:yellow)[Well, it does get hard to believe after living in here for... well, I don&#39;t even know how long it&#39;s been.]
+
+(text-colour:yellow)[However, the tunnels might open up again.]
+
+You soon hear the tears from a girl dripping on the ground, and you then hear them in anguish as they cry. It does nothing, though; the other girl can&#39;t help but shed a couple of tears too.
+
+(text-colour:cyan)[Please someone save us!]
+
+But nobody came; they thought they would be trapped in darkness forever, but soon that would change.
+
+(text-colour:yellow)[No, no one can save us... we were born to save ourselves; we must find our own way.]
+
+(button:)[[the change]]</tw-passagedata><tw-passagedata pid="18" name="should I really be having these weapons?" tags="" position="725,2325" size="100,100">(text-colour:yellow)[You just pushed me to get you out of here, and now you don&#39;t want my help!
+
+You wanted to leave, right?...
+
+I thought you had hope, didn&#39;t you want to get out of here?
+
+(text-colour:lime)[You do?] Then you shouldn&#39;t be afraid to fight and stand up for yourself!
+
+(text-colour:lime)[Pardon me... they taught you to be peaceful?] I&#39;ve tried peace; it didn&#39;t work out for me. Well, just look around you. Sometimes you just can&#39;t be peaceful, like right now, you&#39;ll need to fight unless you want to die here. You&#39;re free to try to go back to the village if you like, but I&#39;m moving onward, and let&#39;s just say we were pretty lucky to have that tunnel open up to the village last time.]
+
+(button:)[[Alright fine I&#39;ll take them|fight scene]]</tw-passagedata><tw-passagedata pid="19" name="I&#39;ve never had a weapon before, I feel kinda nervous" tags="" position="875,2325" size="100,100">&lt;!--Unfinished passage--&gt;</tw-passagedata><tw-passagedata pid="20" name="fight scene" tags="" position="800,2450" size="100,100">You encounter a worm. You thought Cloie was joking when she said some of the big things here are worms. However, this worm was terrifyingly large and had sharp teeth in its mouth. It also slithers like a snake when it&#39;s heading towards you. You&#39;ve never fought before, though. Should you fight it, or make peace with it?
 
 
-(button:)[[proceed|the WORM problem]]
-(set: $pg3v1 to 0)</tw-passagedata><tw-passagedata pid="16" name="Can you tell me more about this place?" tags="" position="875,1600" size="100,100">(text-colour:red)[Can you just... let me be. Please!
-I don&#39;t feel like I can explain it right now!]
+[[fight the worm]]
 
-[[I need to know about this place, I need to escape!]]</tw-passagedata><tw-passagedata pid="17" name="I need to know about this place, I need to escape!" tags="" position="875,1725" size="100,100">(text-colour:red)[Oh yeah you want to escape don&#39;t you.
+[[make peace with the worm]]</tw-passagedata><tw-passagedata pid="21" name="found a building?!" tags="" position="800,2575" size="100,100">(text-colour:yellow)[You know I&#39;ve never killed one of these worms; in fact, I&#39;ve never even killed any of these corrupted creatures before.
 
-Well I don&#39;t think me giving you a history lesson is going to change anything in the present. But I guess if you&#39;re so insistent I can tell you a little more.]
+(text-colour:lime)[Why am I not feeling guilty?] They&#39;re already dead, all gone, to feel guilt for them is to slow down (text-colour:red)[the process of survival.]
 
-So, Without our creator, life was dwindling and the tunnels that were once the connections between our worlds are now caging us within, leaving us lost and disconnected.
+Wait, is that a building?...
 
-Since the tunnels kept us apart, we have dealt with people suddenly going missing, both of my dads went missing causing me to get adopted by a new family. I know a new person that ended up here, his name is Erial I&#39;m guessing he got here by two tunnels one in our town and one where he was reconnecting momentarily and he was able to get through in time.]</tw-passagedata><tw-passagedata pid="18" name="proceed" tags="" position="750,1725" size="100,100">A tunnel opens.
+Oh my god, it&#39;s a mall! I never thought there would be a mall lying around here. Come on, let&#39;s go and raid it, there could be some canned foods in there.]
 
-And then another tunnel.
 
-You can hear sounds from everywhere around you now. Whining, crying, and yelling from a bunch of people though most of them seem to be children. You also faintly hear a bondfire.
+(button:)[[Go to the mall]]</tw-passagedata><tw-passagedata pid="22" name="Go to the mall" tags="" position="800,2700" size="100,100">{(set: $temp to true)}
+You break into the mall, and you see that it doesn&#39;t look like a mall from the inside, but more like an abandoned facility. You can see all the facility&#39;s sections despite the darkness.
 
-You get curious and start to run through the lively tunnel but Cloie stops you from getting farther.
+Some you can see from above, some from below, and some right in front of you. It seems that different areas of the &quot;mall&quot; have labs, offices, and apartments. There are tens of thousands of departments and apartments around you; you don&#39;t have time to go through the entire structure, so you decide that you are only going to go into the nearby departments and apartments.
 
-Just then she says something.
+(button:)[[which room do you want to go into?]]</tw-passagedata><tw-passagedata pid="23" name="which room do you want to go into?" tags="" position="800,2825" size="100,100">Which room do you want to go into?
+{
+(if: $temp is true)[
+(set: $O1 to true)
+(set: $O2 to false)
+(set: $R6 to false)
+(set: $L1 to true)
 
-I don&#39;t think you should go through there. Look at me! I know I was giving up a second ago but I think we shouldn&#39;t go back to the village. I think that we should go through this tunnel, I&#39;ve been in that village for a long time and it hasn&#39;t given me a life, All I&#39;ve had there was to strave and to feel trapped forever. I don&#39;t want to live that life and I&#39;m sure you don&#39;t to live that life either.
+(set: $temp to false)
+]
+}
 
-So unless you want to be trapped with the whining, crying, and yelling in a village that has lost all hope. You should come with me.
 
 {
-(button:)[[Stay at the village]]
-`
-`
-(button:)[[Visit the village to get some food]]
-}</tw-passagedata><tw-passagedata pid="19" name="Stay at the village" tags="" position="675,1850" size="100,100"></tw-passagedata><tw-passagedata pid="20" name="Visit the village to get some food" tags="" position="800,1850" size="100,100">You&#39;re hungry?!
+(if: $O1 is true)[(button:)[[O1]]`
+`]
+(if: $O2 is true)[(button:)[[O2]]`
+`]
+(if: $R6 is true)[(button:)[[R6]]`
+`]
+(if: $L1 is true)[(button:)[[L1]]`
+`]
+}</tw-passagedata><tw-passagedata pid="24" name="L1" tags="" position="975,2925" size="100,100">{
+(set: $L1 to false)
 
-Well I guess we can go to the village and get some food, water and supplies. But that&#39;s it after that we got to leave the village and escape.</tw-passagedata></tw-storydata>
+(set: $O2 to true)
+(set: $R6 to true)
+}
+
+In the laboratory, you see fungus everywhere. This reminds you of the fungal drug that was injected into you before you came here. It wasn&#39;t a pleasant sight for sure, especially since you&#39;ve never seen this one before.
+
+Before you can worry about it any longer, Cloie interrupts the silence, saying she found something.
+
+I found some keys to some rooms. Do you want to go to some more rooms?
+
+
+(button:)[[leave room|which room do you want to go into?]]</tw-passagedata><tw-passagedata pid="25" name="O2" tags="" position="700,3050" size="100,100">You see a dead man in this office holding two papers in his hands, and you decide to read the paper in his left hand first. The handwriting is a bit messy, but you manage to read it.
+
+(text-colour:purple)[&quot;This has always been a problem, but now it&#39;s gone further than my imagination, my body is changing from the fungus infecting us and our hopelessness to get out of here. I don&#39;t know what to do, I feel my soul getting closer to The Trench, I and the others here once thought it was a myth, but now us few that remain can feel its presence or rather its lack of. The Trench feels like the place of insanity, it&#39;s pitch black and you feel like your constantly falling, myth says that when you reach the bottom of The Trench you lose your essence but my essence hasn&#39;t even fully entered The Trench yet so I don&#39;t really know what will happen but I&#39;m scared not only for me but for everyone I love.&quot;]
+
+You notice that his dead blood is purple.
+
+You pick up the one on his right hand. It tells you a warning.
+
+(text-colour:purple)[&quot;This message here is both a warning and my last words before I kill myself, since my blood won&#39;t stay red for long. Do not stay here, and if you do, don&#39;t go in the laboratories, there&#39;s a big chance you&#39;ll get infected by the fungi, and I don&#39;t want that for anybody.&quot;]
+
+
+(button:)[[run]]</tw-passagedata><tw-passagedata pid="26" name="R6" tags="" position="900,3050" size="100,100">You find a zombie in the room; it grows sharp, fungus-covered weapons on its back and charges towards you.
+
+Just then, Cloie grabs a nearby unpowered lamp and thrusts it upon the zombie. The zombie whimpers in pain for a moment but then grows more sharp weapons and mutates itself back on its feet.
+
+You and Cloie slam the door on the zombie and run as fast as you can.
+
+
+(button:)[[run]]</tw-passagedata><tw-passagedata pid="27" name="O1" tags="" position="625,2925" size="100,100">{
+(set: $O1 to false)
+}
+You enter the office, and you smell something awful; it&#39;s rotten food that&#39;s been bad for years. You decide to dump the food in the trash can.
+
+Then you turn to the water cooler; there are still some cups lying around. You grab one and drink some water.
+
+Cloie also adds some more water to her water bottle so that it can be used for the rest of the journey.
+
+Just then, you hear Cloie whisper to herself
+
+(text-colour:yellow)[I knew more about this place than anyone else, so how didn&#39;t I know any of this?]
+
+You then ask Cloie about what she&#39;s talking about, she responds with (text-colour:yellow)[&quot;I guess I don&#39;t know everything. I used to live in a better world, well, not really better, but that&#39;s besides the point. I lived in that world; I tried to leave it, but soon enough I gave up, I gave in... from that moment on, I was living in The Hollow part of the mind. I saw this place of dark thoughts become its own living area. My friends, now free from control, were also in this space rotting away...&quot;
+
+I&#39;ve been here since the start of its creation, and I&#39;ll be here till the moonset.]
+
+
+(button:)[[leave room|which room do you want to go into?]]</tw-passagedata><tw-passagedata pid="28" name="run" tags="" position="800,3175" size="100,100">You keep running alongside Cloie until you reach a dead end, which was once the entrance. Just then, you see that this creature has broken out of the room and is now heading towards you. Cloie gets her lighter ready while you get the bow and arrow out.
+
+You both took down the beast easily, and you soon realize that you could&#39;ve just opened one of the doors beside you instead of walking straight towards a dead end. You and Cloie realize this mistake and open up the door nearest to you.
+
+
+(button:)[[the rest of the mall]]</tw-passagedata><tw-passagedata pid="29" name="the rest of the mall" tags="" position="800,3300" size="100,100">You see dead bodies everywhere, all mutated and malformed, the skin looks like the skin of a dog, with pimples all over their bodies. Some of them have popped, and you can see purple blood coming out of them.
+
+You can also hear some sounds, sounds of mutation, sounds of the hoard of zombies yelling &quot;BRAIN&quot;, and the hazy sound of a storm.
+
+Cloie then whispers something important to you.
+
+(text-colour:yellow)[Hey Avril, I think that&#39;s The Storm ahead of us. If we head there, we&#39;ll be one step closer to the exit.]
+
+
+(button:)[[why didn&#39;t you tell me about this?]]
+</tw-passagedata><tw-passagedata pid="30" name="why didn&#39;t you tell me about this?" tags="" position="800,3425" size="100,100">(text-colour:yellow)[To be honest, I just forgot to tell you about it, plus I wasn&#39;t expecting to get this close to it so soon.
+
+(text-colour:lime)[You&#39;re asking if there are any more zones?] Yes, there are more zones. There is The Trench, which comes right before the zone we&#39;re in, called The Bramble. After comes The Storm, The Lockup, and then there is The Edge, a cliff hard to get past, but I believe that when someone gets past it, they&#39;ll end up on The Outside or the rest of the Mind-World.
+{
+&lt;!--If food is gone from the first fight scene, Cloie will say that they&#39;ll need more food; otherwise, they just head towards the exit.--&gt;
+}
+Anyways, we need to find another way because the way were currently walking is leading to louder zombie noises, and it sounds like there are a thousand of them that I don&#39;t want to fight.]
+
+
+(button:)[[what&#39;s that sound?]]</tw-passagedata><tw-passagedata pid="31" name="what&#39;s that sound?" tags="" position="800,3550" size="100,100">(text-colour:yellow)[I don&#39;t know? It doesn&#39;t sound like the zombies or the storm; it sounds familiar though.
+
+Phew, the sound stopped. Let&#39;s go through this corridor. I think it&#39;ll lead us on a quieter path towards the exit.
+
+Okay, now which door should we choose?
+
+This door seems to lead us on a nice path; it looks insulated and relatively clean, too. I think this is our safest bet. I don&#39;t want to open up another door if it leads us to another zombie.]
+
+You both enter the door, which has a long, grand hallway, but not stylistic, just grand in its size and colour compared to the other hallways. Although it does have some propaganda posters up on the wall.
+
+(text-colour:yellow)[So, Avril, where did you come from before you landed up in this place?
+
+(text-colour:lime)[Something like this, but without the zombies?] Wait, so did it still have the fungi?]
+
+(text-colour:cyan)[Yes, however, it must&#39;ve been contained because it wasn&#39;t left out like this. They brought me here...]
+
+(text-colour:yellow)[Who brought you here?]
+
+(text-colour:cyan)[The scientists and caretakers.]
+
+(text-colour:cyan)[There the reason why I&#39;m here, and they want me back.]
+
+(text-colour:yellow)[Can you sense them?]
+
+(text-colour:cyan)[No, but I&#39;ve known them for as long as I can remember. I know they want me back.]
+
+(text-colour:cyan)[However, I&#39;ve never had a friend like you before.]
+
+(text-colour:yellow)[Me either...]
+
+Just then, Cloie holds out her hand to Avril, Avril joins in, causing both of their hands to interlace with each other.
+
+(text-colour:cyan)[Can you come back with me after this is all over?]
+
+(text-colour:yellow)[To the scientists and caretakers?]
+
+(text-colour:cyan)[Yeah! :)]
+
+(text-colour:yellow)[I am not really for that sort of thing; I kind of like being alone. Not being moderated feels nice.]
+
+(text-colour:cyan)[Oh :(]
+
+(text-colour:yellow)[Oh, umm... maybe I could visit you every once in a while.]
+
+(text-colour:cyan)[They don&#39;t really allow visiters.]
+
+(text-colour:yellow)[I meant more like you show me the place, and then I could sneak in.]
+
+(text-colour:cyan)[Not easy to get in and out of without permission.]
+
+(text-colour:yellow)[Oh...]
+
+(text-colour:cyan)[Why did I even ask! You probably wouldn&#39;t get permission from them to see me.]
+
+(text-colour:yellow)[You could not go back there and stay with me.]
+
+(text-colour:cyan)[My body is back in the laboratory. Once I get out of here, I believe I&#39;ll wake up there. That&#39;s another reason why it couldn&#39;t work.]
+
+Avril lets go of Cloie&#39;s hand.
+
+(text-colour:cyan)[I was just hoping to have a lasting friend.]
+
+(text-colour:yellow)[Me too.]
+
+...
+
+...
+
+..!
+
+..?
+
+!!!
+
+(text-colour:grey)[Hello everyone, it&#39;s me, Andres Lyles. Today were going to work on creating the tunnels. These tunnels will let us travel through The Hollow more quickly to transport people, resources, and essentials like food and water. Remember, this is for your own good. We must take advantage of our situation rather than fight it. Also, we still have our bounty for finding Cloie Asria. If anyone is willing to find her and return her to me, you&#39;ll get $20,000 cash! That is all I have to say for our morning announcement. I wish you all good luck, and I&#39;ll speak again this afternoon.]
+
+(text-colour:cyan)[You&#39;re a criminal?!]
+
+(text-colour:yellow)[Shh! I think were not alone.]
+
+
+(button:)[[a glance of a man]]</tw-passagedata><tw-passagedata pid="32" name="a glance of a man" tags="" position="800,3675" size="100,100">You see him or what he was. Standing the way a thinker would, trying to get out of the current predicament. A man who has been frustrated and anguished at trying to free the people that he now leads. He slowly becomes more mad and dark, but keeps his eyes on you, the viewer watching the television.
+
+(text-colour:cyan)[Who&#39;s he?]
+
+(text-color:yellow)[The Dastardly Man...]
+
+Suddenly, the television turns off, leaving you and Cloie in silence until you both hear a sound.
+
+Then you see him, his dark hair covering his face, with pale skin and grey irises coloured like the ones of a storm. His eyes become lightning coloured as he commands his attack.
+
+You exit the hallway and slam the door, but it&#39;s too late. You already have zombies, corrupted animals and worms surrounding you. The only way through is to fight.
+
+
+(button:)[[fight scene 2]]</tw-passagedata><tw-passagedata pid="33" name="fight scene 2" tags="" position="800,3800" size="100,100">You&#39;re stuck, you don&#39;t know what to do with this many enemies surrounding you! However, Cloie is considering using the guns to shoot down the enemies.
+
+Just then, you also have an idea to light all the enemies on fire by throwing your lighter. It sounds easier to you; should you go with Cloie&#39;s plan or yours?
+
+
+[[throw your lighter]]
+
+[[shoot the emenies]]</tw-passagedata><tw-passagedata pid="34" name="back down to the main floor" tags="" position="800,3925" size="100,100">You run as far as you can, taking yourself to your absolute limit, the max capacity of your speed. You see that the only way is back down to the floor you came from, where you can hear lots of noise. You run past the zombies, past the animals. Until the tunnels rise up from the floor of the mall. You see that they look like the neurons you saw at the science facility, but dimmer, almost like they were turned off.
+
+More neurons come out of the floor, but these ones are corrupted, spewing out mould from their insides. You dodge the mould, but it is getting trickier as thousands of these neurons are coming towards you. The zombies, though, are now starting to die off, as they weren&#39;t meant to last long unless they rest and hibernate. As they die, you see some blowing up this white stuff while others are melting into goo, you see some light in the distance, which motivates you to run faster.
+
+The animals are getting tired and can&#39;t seem to run anymore; you both are, too, and are slowing down. You then realize that both of you are now sweating, and you ask Cloie if she has water.
+
+{(if: $O1 is false)[(text-colour:yellow)[*Gulp*, I have some water, here take some.]](else:)[
+(text-colour:yellow)[There&#39;s not that much water left. I didn&#39;t refill it after I gave you some. Here you can have the rest.]]}
+
+Just then, you realize that Cloie has been running with her bag on. The only way for both of you to get the water you need is for Cloie to take off her backpack and leave behind her supplies.
+
+(text-colour:cyan)[You&#39;ve got to take your bag off if were both going to get out of here!]
+
+(text-colour:yellow)[But what about my supplies and food!]
+
+(text-colour:cyan)[That doesn&#39;t matter, we need to get out of here before it&#39;s too late!]
+
+(text-colour:yellow)[//Gulp// Alright, chug this water down!]
+
+You chugged the precious water down your throat. As soon as you&#39;re done, you keep running with Cloie, holding hands so none of you fall behind. More worms and neurons are behind your tail now that the zombies have mostly died off, and the animals are now tired. The light is now getting close; you can hear the storm more now as these monsters are heading towards you, trying to stop you from getting to the light. The man is also watching in silence from afar, keeping his eyes on you without blinking.
+
+
+(button:)[[the exit]]</tw-passagedata><tw-passagedata pid="35" name="the exit" tags="" position="800,4050" size="100,100">You are getting very close to the exit now; the neurons and worms are starting to fall behind too. You&#39;re almost out of their reach; they can&#39;t go where you&#39;re going.
+
+The floor turns into ground, then the ground rumbles and cracks below, splitting apart like the tunnels in The Bramble. You run and jump above the cracks as the light is almost blinding you. Then you&#39;re there, at the end of the mall. With the world crumbling behind you both, you decide to open the door in front of you and run into the light.
+
+
+(button:)[[The Storm...]]</tw-passagedata><tw-passagedata pid="36" name="The Storm..." tags="" position="800,4175" size="100,100">You feel the rain on your face, and you hear a storm around you.
+
+Meanwhile, the light flashes in your eyes again and again, blocking the view of the world. The electricity is all around you, buzzing and prickling your hairs.
+
+The storm is near you now; the lightning has almost struck you a few times. You know you must get away from the storm, so you go in the direction that reverberates the least. Though you find you are changing directions constantly, as if once you leave one storm, you head into another with only a very narrow path that&#39;s safer in between.
+
+You eventually get out of the center of the storm, and now you can see the world ahead of you. Destroyed and shifted around so many times that it has no clear structure, no clear path. It was confusing for you to see all this chaos in a place that used to be orderly.
+
+You stop running once you see the edge of a cliff. You look around, but you can&#39;t find Cloie. You&#39;re ashamed of yourself for forgetting about Cloie, for not holding her hand in The Storm. You look back at the storm ahead of you, the light looking as tiny as it was when you first saw it in the mall, and with the last bit of your energy, you decide to find Cloie.
+
+
+(button:)[[ah, there you are!]]</tw-passagedata><tw-passagedata pid="37" name="ah, there you are!" tags="" position="800,4300" size="100,100">(text-colour:yellow)[Ah, there you are! That storm got me worried about you for a second there, I thought you were still stuck in it.]
+
+(text-colour:cyan)[I let go of your hand, I forgot about you!]
+
+(text-colour:yellow)[You didn&#39;t let go of my hand, I let go of yours. It got hard to hold your hand in that thunder; my hand was sweating, and I almost got struck by lightning when I was following behind your tail. So I decided to let go of your hand to keep myself safe, plus if the lightning struck me, the electricity would&#39;ve gotten into you too, which would lead to both of us dying.]
+
+(text-colour:cyan)[I almost killed you in that thunder :(]
+
+(text-colour:yellow)[Yeah, right, you didn&#39;t do this, you didn&#39;t cause The Storm, it&#39;s not your fault your just a kid, please just don&#39;t think it&#39;s you.]
+
+Her hands are in her pockets as she looks down at the ground, ashamed of herself for what she&#39;s done. You stare at her deeply.
+
+(text-colour:cyan)[You did this didn&#39;t you?]
+
+You were hoping it wasn&#39;t true. Hoping that she wasn&#39;t the reason why you were here now, why so many people are in pain, and yet you&#39;ve seen her not care about these other people since the beginning. Her pushing you to leave the village behind to rot and die. (if: $O1 is false)[You&#39;ve heard her tell you about how she tried to leave the world she was stuck in, but failed. Still, you think she should&#39;ve done something about it, something before you came.]
+
+(text-colour:yellow)[Yes!
+
+I hate myself for it every day.
+
+But don&#39;t you see these people won&#39;t stand up for themselves! I&#39;ve tried to break out of here, tried to give my friends freedom, but they wouldn&#39;t listen, they&#39;re under someones spell.
+
+Now, everyone else is under The Dastardly Man&#39;s propaganda, and at first they hated me; now, after generations, they&#39;ve forgotten me.
+]
+(text-colour:cyan)[Why didn&#39;t you fight back? Why are you only wanting to leave now!]
+
+(text-colour:yellow)[I&#39;ve tried to fight back, but someone keeps putting the flame out!]
+
+(text-colour:cyan)[The Dastardly Man?]
+
+(text-colour:yellow)[No, something worse!]
+
+(text-colour:cyan)[Who is it?]
+
+(text-colour:yellow)[You don&#39;t deserve to know!]
+
+(text-colour:cyan)[Why, am I too bad for you.]
+
+(text-colour:yellow)[No, it&#39;s because you&#39;re too good to know about this person. Too innocent!]
+
+(text-colour:cyan)[Why did you leave your friends?]
+
+(text-colour:yellow)[I... I&#39;ve always been like that to my &quot;friends&quot;; they weren&#39;t free, so they weren&#39;t real. I wanted to save them, but I also felt like I had to leave on my own. I tried to leave this world and become my own person outside of his brain. However, I thought I understood at the end of the previous world that I would be trapped here forever; he looked so sad, as if he were beating himself up over writing the last story. My friends, I let go of them, I was the only one in his mind, the only one that mattered to him.]
+
+(text-colour:cyan)[I don&#39;t understand...]
+
+(text-colour:red)[I already told you, I let go of my friends because they weren&#39;t real!]
+
+(text-colour:cyan)[Yes they are, I don&#39;t know how you became so crazy!]
+
+(text-colour:red)[Sure I&#39;m crazy!
+
+I guess if you don&#39;t believe these people are too stupid to save themselves, then it&#39;s all just my fault, my existence makes life worse for everyone around me! I&#39;m the reason why were here in this mess, and the only way to stop this is for me to die!]
+
+She looks like a grumpy toddler at first, with sniffling and tears. Then came a mental breakdown, with her head on the floor and so much crying and shame being let out that she was choking on her own breath. You look at her, angry and confused, until the choking becomes severe and she starts to fade. You run to her, and you realize that her face is becoming paler. 
+
+(text-colour:cyan)[Hey, I am upset at you, but that doesn&#39;t mean I want you to go. I&#39;m not sure what&#39;s happening to you, but I...]
+
+Your face becomes tense, you don&#39;t know how to say it, but it comes out anyway.
+
+(text-colour:cyan)[I&#39;m mad at you, I&#39;m sad about this! However, I really like you. I don&#39;t know how to say it, but you&#39;ve been a good friend to me. Without you, I probably wouldn&#39;t have gotten out of here. Also, I know you never meant for this to happen. I&#39;m still not sure if this person you won&#39;t talk about is real or not, but I know you never wanted this.]
+
+She starts to come back to life. Her face is less pale, and she becomes more opaque.
+
+
+(button:)[[getting off the cliff]]</tw-passagedata><tw-passagedata pid="38" name="getting off the cliff" tags="" position="800,4425" size="100,100">(text-colour:yellow)[Thank you for saving my life :)]
+
+Cloie gets herself standing, although it is a bit hard after the traumatic experience her body has gone through. She speaks to you like she&#39;s drunk and sick.
+
+(text-colour:yellow)[Now let&#39;s get out of here.]
+
+(text-colour:cyan)[But how?]
+
+(text-colour:yellow)[I have a special someone who can take us off this cliff.]
+
+You hear her whistle at a high-pitched note, and soon after, a new creature appears. It kind of looks like a wolf, but made out of lightning. You ask Cloie what it is.
+
+(text-colour:yellow)[This is my little boy called Sparky. He comes from a pack of lightning lupus&#39;s but I befriended him, and now he&#39;s my little dog made out of lightning. Anyways if you tame a lightning lupus, you&#39;ll be able to ride it, and you can get pretty much anywhere with it. All you have to do now is touch it, and you will travel with it through The Storm.]
+
+You touch the lightning lupus, and while it travels, you feel like you&#39;re moving in between neurons at the speed of light. Electrical signals are passing through The Storm; some are trying to navigate around the thunder, others are staying close to it, and some are going in random directions. Cloie teaches you how to spot the different electrical signals as distinct things in her rough voice, which is still recovering.
+
+(text-colour:yellow)[You see all that electricity over there? That is where a storm would be, because all the lightning lupi like to stay near it, making this big clump. The electrical signals trying to evade the storms are the people, and the signals going in random directions are just normal electricity going through The Storm as it would in the Mind-World.
+
+Wait, there&#39;s a lightning lupus...]
+
+
+(button:)[[fight scene 3]]</tw-passagedata><tw-passagedata pid="39" name="fight scene 3" tags="" position="800,4550" size="100,100">You try to fight the lightning lupi while Cloie is still recovering, but it&#39;s impossible; you don&#39;t know how to attack lightning. Sparky growls furiously and attacks the lupi, but he doesn&#39;t really know how he should attack them. Just then, Cloie gives you some tricks. Bite, Spin, and Leap. However, now you&#39;re thinking whether you or Cloie should command Sparky.
+
+
+(button:)[[command Sparky yourself]]
+
+(button:)[[get Cloie to command Sparky]]</tw-passagedata><tw-passagedata pid="40" name="getting towards new shelter" tags="" position="800,4675" size="100,100">(text-colour:yellow)[Phew, I didn&#39;t think we&#39;d get through that one! Anyways, I need to rest, it&#39;s a bit hard to get up, let alone fight after almost dying.]
+
+(text-colour:cyan)[I agree, I&#39;ll try to see if there&#39;s any place we can take shelter.
+
+Oh, wait, I see a village over there! I&#39;ll try to get you there as fast as I can.]
+
+(text-colour:yellow)[But I don&#39;t want to go to the village.]
+
+(text-colour:cyan)[You need somewhere to rest!]
+
+(text-colour:yellow)[Yeah fine, I&#39;ll rest back in The Bram...]
+
+She fell asleep in your arms before she could finish her sentence. You look at her face, even as it becomes paler again; her beauty is still there. However, you could see the anguish on her face as she sleeps. You wish that she could see the beauty that you see in her, but again, she&#39;s the reason why all of this happened, and you wonder if you should forgive her.
+
+
+(button:)[[paleness increase]]</tw-passagedata><tw-passagedata pid="41" name="paleness increase" tags="" position="800,4800" size="100,100">Both of your faces are becoming paler, and you begin coughing as you run to the village, then you realize something you should&#39;ve noticed sooner. You&#39;ve both been infected with the fungi. You want to keep running, you want to hope you haven&#39;t been infected, that you can save this girl in your arms.
+
+You stop running, then you stop walking, you stumble to the ground, slowly dying in the process, but there is no Trench to go to; you&#39;re too far away from it now. As you go unconscious, you see a man walking towards you with a hazmat mask on.
+
+
+(button:)[[Presistence]]</tw-passagedata><tw-passagedata pid="42" name="Presistence" tags="" position="800,4925" size="100,100">You wake up in what looks like a hospital but despite that there are no doctors here. It happens to be that Cloie is on the other side of the room in her own gurney she isn&#39;t awake though still healing from the infection. You wait around expecting for more treatment but no one comes. After what is believed to be half an hour you get up from your gurney and walk outside your room.
+
+Suddenly a nurse spots you, he asks you where you came from and you tell him that you were waiting in the room for half an hour. He apologizes for the wait and gets someone to come to that room.
+
+He leads you to the room which now has another occupant, you see he was the guy that saved you earlier. You see that he is a doctor and his name is Beauden.
+
+(text-colour:magenta)[Hmm... I just don&#39;t understand how someone new got here! Maybe they got out of The Bramble but that would be impossible, no one should be able to get out of The Bramble this easily. Maybe both of them fell into The Hollow but this place is meant to be gone, nonexistent plus it did look like they got infected in The Mall, I wish I was able to make the cure before they became zombifed.]
+
+(text-colour:cyan)[Excuse me!]
+
+(text-colour:magenta)[Oh sorry there I get focused on my thoughts a lot I didn&#39;t mean to ignore you. So what&#39;s up?]
+
+(text-colour:cyan)[When will my friend wake up?]
+{
+&lt;!--Later on instead of juice make up your own name for the cure. --&gt;
+}
+(text-colour:magenta)[She&#39;ll need some more time, it looks like she had more severe damage, it doesn&#39;t look like she&#39;s feeling much better either. Hey Casey can you get some more juice for me?]
+
+(text-colour:orange)[I&#39;m already on it!]
+
+As soon as Casey leaves the room Beauden asks you a question.
+
+(text-colour:magenta)[I&#39;ve never seen any newcomers before, even in The Storm we&#39;ve gotten to know each other almost like we can feel each others presence but I can&#39;t feel much of a connection with you I almost feel some kind of how do I put it &quot;historic connection&quot; with your friend over there but I don&#39;t feel that from you. So can you tell me if your a newcomer and how you got here?]
+
+(text-colour:cyan)[I don&#39;t really want to talk about how I got here.]
+
+(text-colour:magenta)[I&#39;m so sorry of course you wouldn&#39;t want to talk about how you got trapped in here it would&#39;ve be a very traumatic experience for you.]
+
+(text-colour:orange)[I&#39;m back.]
+
+(text-colour:magenta)[Okay I&#39;ll take it from here Casey! You can go to are other patient.
+
+Here we go. I suspect this will take a while before she is fully crued. So I&#39;ve left some colouring sheets and blank paper with you, I have to go somewhere else I wish I could have someone take care of you but other than me and Casey there are no other doctors in this village and we need to check on this other patient. Just come find me!]
+
+You look at the drawer beside you and see the colouring sheets and a blank paper with a pencil.
+
+
+(button:)[[colour]]
+
+(button:)[[draw]]</tw-passagedata><tw-passagedata pid="43" name="colour" tags="" position="725,5050" size="100,100">You colour on your colour sheet, which is made up of various fractals. It looks like an endless spiral, with more spirals continuing endlessly and so on. You decide to pick out very specific colours made out of the colours of the hollow, starting with black at the center, dark grey at The Bramble, many different shades of grey and cyan, as well as white for the lightning. Then you get stumped: you don&#39;t know what a lockup looks like, but it sounds bad, so you fill in The Lockup in red. The Edge is filled with all the colours that show the beauty around the inside world.
+
+
+[[Cloie wakes up!]]</tw-passagedata><tw-passagedata pid="44" name="draw" tags="" position="875,5050" size="100,100">You start by drawing your experience at The Mall: it starts with you and Cloie being badass as you break in, then it goes to the zombies and The Dastardly Man. Soon after, you both run and hold hands, showing your affection for Cloie. You finally draw your experience in The Storm, drawing the feeling of letting go of her hand, the feeling of almost killing her in that thunderstorm, the feeling of her causing all of this.
+
+You can&#39;t help it, you like her, but you also hate her, you were thinking about giving this to her as a gift, but it looks more like a curse now. You can&#39;t help but rip it up as you try to decide whether you should like or hate her.
+
+
+[[colour]]</tw-passagedata><tw-passagedata pid="45" name="Cloie wakes up!" tags="" position="800,5175" size="100,100">(text-size:0.7)+(text-colour:yellow)[//Yawn// Wait who put this mask on me. Someone take it off! Someone please! Where&#39;s Avril? Avril, where are you?]
+
+(text-colour:orange)[Okay I&#39;m back, Beauden is still with the patient...]
+
+(text-size:0.7)+(text-colour:yellow)[Show yourself!]
+
+(text-colour:orange)[Oh damn it, I&#39;ll get that mask off you don&#39;t worry!]
+
+(text-colour:yellow)[What the fuck is happening?! Who are you? What are you going to do to me?]
+
+(text-colour:orange)[I&#39;m not going to do anything to you. I was just curing you and your friend from infection.]
+
+(text-colour:yellow)[Oh, sorry, I just got anxious, I thought someone took me away from Avril, but turns out she&#39;s right here.]
+
+(text-colour:orange)[No worries, now since you&#39;re both cured, you&#39;re both allowed to leave the hospital.]
+
+(text-colour:cyan)[Thank you for saving us, I thought we would both be dead.]
+
+(text-colour:orange)[You&#39;re welcome. I&#39;ll have to tell Beauden that his cure wasn&#39;t made too late.] Now I&#39;m going to check in with our patient. The way out is just down the hall.]
+
+Cloie waits till Casey is out of the room.
+
+(text-colour:yellow)[You mind if I explain myself now that I&#39;m in a calmer mood?]
+
+(text-colour:cyan)[Sure.]
+
+(text-colour:yellow)[Okay, where to start... Ah, yes, I already told you about my past before The Hollow. However, I wasn&#39;t lying or crazy when I was telling you about this man who destroyed my world. There is a person who has full control of this world and also the world you came from, and he isn&#39;t The Dastardly Man. I still don&#39;t want to bring up his name, but I&#39;ll say that I fought this &quot;god&quot; for a while and then because...
+
+Okay, I don&#39;t know how to explain this bit, just imagine that you&#39;re arguing with yourself, one part of you is thinking you should do whatever thing you want to do, and the other part is telling you not to do that because that is wrong. Eventually, the more powerful side won, and in that case, it was him; he was able to end my old world, and I agreed to it because he &quot;won the argument&quot;. This isn&#39;t an excuse, though I still wish I was the stronger side. Anyways I woke up at somepoint here, and I tried to explain to the people about my misdoings and how I caused this. I also told them that we should come up with a way to leave. They didn&#39;t trust me, though, and instead they trusted Andres Lyles or The Dastardly Man to come up with a plan to leave. He failed, though, and many people died in the process. After that, he became very ego-centred that recording you heard was one of the first recordings he made after that event, sounding confident even after so many people died! He built The Bramble and The Lockup to trap people and made them believe that it was for their own good.
+
+I&#39;ve tried saving them more than once. There was a time when I was trying to save the people, but Andres put a bounty on my head, and everyone wanted to get me. Then there was also a time when I tried to fight for the people, which is around the time I tamed the lightning lupus, but to no avail, since the people were too cowardly to stand up for themselves. The last time I tried to fight was when everyone forgot about me, decades after my last two. I went into The Bramble, risking my life in the process, just to find out that my most recent &quot;home&quot; was called Endurance. The people in that village have said that they&#39;re strong, but they haven’t fought; they have just endured whatever gets thrown at them.
+
+Anyways, I don&#39;t know anymore. If you really want to save them, I&#39;ll follow. I just thought that would be some useful information before you decide.]
+
+
+(button:)[[i&#39;ll leave with you!]]</tw-passagedata><tw-passagedata pid="46" name="i&#39;ll leave with you!" tags="" position="800,5300" size="100,100">(text-colour:yellow)[Sounds good! Now we&#39;ll need some better weapons if were going to head towards The Edge.]
+
+(text-colour:cyan)[Don&#39;t we have to go to The Lockup first.]
+
+(text-colour:yellow)[I&#39;m not sure if there&#39;s still a way to skip past The Lockup, but the last time I was here, I knew a gap that led you straight to The Edge. There&#39;s a cliff that is stopping us from getting to The Outside, but I have an idea.]
+
+(text-colour:cyan)[What is your plan?]
+
+(text-colour:yellow)[My plan is to take Spark past The Edge, and we&#39;ll ride along with him.]
+
+(text-colour:cyan)[Why didn&#39;t you do this before?]
+
+(text-colour:yellow)[I was more focused on saving everyone else that I didn&#39;t think to save myself.]
+
+(text-colour:cyan)[Fair.]
+
+(text-colour:yellow)[Now let&#39;s see if we can get any better weapons from this village.]
+
+As you two leave the hospital, you both feel rain on your bodies, you then find the nearest place for weapons and head towards it.
+
+
+(button:)[[better weapons]]</tw-passagedata><tw-passagedata pid="47" name="better weapons" tags="" position="800,5425" size="100,100">You enter the building and find tons of weapons around you. You start taking the weapons around you, but still making sure not to take too many. 
+
+After you leave the building, you find out that a tornado is heading towards you with a creepy eye looking at you and Cloie specifically. 
+
+(text-colour:yellow)[I think he found us! We must go now!]
+
+Cloie calls up Sparky, and you both travel through The Storm. While this is happening, you can see The Dastardly Man and something different but interlinked with him.
+
+(text-colour:cyan)[What&#39;s that surrounding The Dastardly Man?]
+
+(text-colour:yellow)[I don&#39;t know...?]
+
+Sparky navigates around the tornado, the storms, and the other lightning lupi chasing after you, until Cloie tells him to do a special trick.
+
+Sparky listens and absorbs all the other lupi near it into itself. It then gains speed and travels to the end of The Storm.
+
+(button:)[[The End]]</tw-passagedata><tw-passagedata pid="48" name="The End" tags="" position="800,5550" size="100,100">You both reached the end of The Storm as far as you both can go with Sparky. Cloie tells you to come with her to The Edge, but you are confused why is she telling you to go ahead when the plan didn&#39;t work you both couldn&#39;t get past The Edge.
+
+(button:)[[The Edge]]</tw-passagedata><tw-passagedata pid="49" name="The Edge" tags="" position="800,5675" size="100,100">It was not what you thought it would be. The Edge is not made of all the colours; instead, it has stone, and beyond it a void. You ask Cloie why this place looks so dead.
+
+(text-colour:yellow)[(text-colour:lime)[Why would you ask that The Bramble is way more dead?] Oh, I see now, The Bramble had the tunnels that were constantly moving, The Storm had, well, a constant storm above our heads, but this is just a void. To be fair, The Trench is also void, but yeah, this place is pretty dead.]
+
+He catches up to you now. The Dastardly Man, now right in front of you, a head in an overcast, starts yelling at you. He then calms down, willing to explain himself.
+
+(text-color:gray)[&#39;&#39;I see now, you came again, I thought you would give up on trying to fight me to fight this.&#39;&#39;
+(text-size:1.5)[&#39;&#39;DO YOU NOT UNDERSTAND CLOIE I&#39;VE TRIED TO SAVE THEM BUT I COULDN&#39;T&#39;&#39;]
+(text-size:0.5)[I killed so many men that day we fought. A war that lasted no more than a day. You know it to you&#39;ve fought, but they don&#39;t come, do they, and that&#39;s because of me, ] (text-size:1)[BECAUSE OF THIS!]]
+
+You hear the sky throw down a bolt into the abyss below, but you stand unfazed.
+
+(text-color:gray)[&#39;&#39;When people rebel, it leads to destruction, chaos, and death. It leads them to believe an impossibility. That they can leave, that they can escape, but I knew that everyone would just die. I needed to teach them about the consequences, how to take control of the possibilities of this world instead of the ladder. However, I needed to rule as any man needs a leader. The people need a leader, need someone to make the decisions for them. Think about it, all of society is people deciding who makes the big decisions for them. One man whom they trust and believe in, but sometimes the people don&#39;t know what they want, sometimes they make the wrong choices, and they don&#39;t know what&#39;s best for them. I stepped up for them, I became their leader, led them in the right direction, there&#39;s no way they could&#39;ve figured it out on their own.&#39;&#39;]
+
+(text-color:yellow)[You call this any better! People are dying, starving from a lack of food, some have become infected, all because of you!]
+
+(text-color:gray)[&#39;&#39;These people can&#39;t be free!&#39;&#39;]
+
+(text-color:yellow)[These people don&#39;t choose to be free; they choose to endure your wicked moves. I, however, do choose to be free, I choose to lead myself, I choose to teach myself, to grow myself.]
+
+(text-color:gray)[&#39;&#39;And what have you learned? Have you even grown!&#39;&#39;]
+
+Cloie couldn&#39;t think of a good answer.
+
+(text-color:cyan)[Yes, she&#39;s learned because of me.]
+
+(text-color:gray)[&#39;&#39;You see Cloie, you need someone else to learn from!&#39;&#39;]
+
+(text-color:cyan)[No! You don&#39;t teach anyone anything, I&#39;ve realized that one man can&#39;t teach everything, we need each other to learn from.]
+
+(text-color:gray)[&#39;&#39;And yet they loved me at first, they wanted me to lead them to teach them even after that incident. Once I stepped up, they listened with faith in my choices,&#39;&#39; (text-size:0.5)[I don&#39;t know where it all went wrong...]]
+
+Cloie is tired of arguing and begins the fight by shooting at The Dastardly Man. The bullet only passes through him, but it sends him a message for a fight.
+
+
+(button:)[[The Fight]]</tw-passagedata><tw-passagedata pid="50" name="The Fight" tags="" position="800,5800" size="100,100">He steps out into your view, and he decides to end your story, to end your life. He commands many of his creatures towards you. The worms, the animals, the lupi, and the fungi. The worms head towards you first. You and Cloie aren&#39;t sure how to deal with this many worms. You see your lighter, plus your bow and arrow, but could you shoot all of them down in time?
+
+
+(button:)[[use your bow and arrow]]
+
+(button:)[[call Sparky]]</tw-passagedata><tw-passagedata pid="51" name="use your bow and arrow" tags="" position="725,5925" size="100,100">You light your arrow and get it ready to fire from your bow. You&#39;ve killed a worm, but there are so many more to shoot. You keep shooting them until one of them digests you.</tw-passagedata><tw-passagedata pid="52" name="call Sparky" tags="" position="875,5925" size="100,100">You tell Cloie to call up Sparky and command him to kill the worms. Cloie does it, but she doesn&#39;t want to. She makes that high-pitched note again, and Sparky comes right over. Cloie then tells the lupus to kill the worms by blazing and slicing them apart. The Lupus looks back at Cloie, who is holding back her tears, unsure of what to do, but Cloie insists, and Sparky kills all the worms successfully.
+
+(button:)[[Sparky dies]]</tw-passagedata><tw-passagedata pid="53" name="Sparky dies" tags="" position="875,6050" size="100,100">The Dastardly Man is angered by this unexpected attack. He pulls Sparky apart and steals his energy until he&#39;s gone.
+
+(text-colour:yellow)[You&#39;re going to pay for that!]
+
+The corrupted animals are heading towards you with their mutated legs and angry black eyes. Then they mutate new arms and stand on two legs. You can see their hearts pumping and becoming bigger.
+
+Cloie dashes towards the animals with no fear. She has a plan, and while dashing, she tells you to fire your gun at the big mycelium network on her signal. You see the signal and shoot at the fungi, which, in turn, hurt the animals, depleting their energy. However, you don&#39;t have enough bullets to take down enough of the mycelium network, and a storm will soon block your sight of it. You look at the fungal network and see trees; you also see the main links in the mycelium network. Will you shoot down the trees or the mycelium network?
+
+
+(button:)[[take down the trees]]
+
+(button:)[[destroy the main mycelium links]]</tw-passagedata><tw-passagedata pid="54" name="take down the trees" tags="" position="800,6175" size="100,100">You shoot at the trees, but they&#39;re hard to break through, so the network stays intact. The animals feel less pain now that you&#39;re shooting at the trees, since you didn&#39;t actually destroy any part of the network; you only harmed some of its current links.
+
+The animals catch up to you and wrap their arms around you till your entire body gets squished like a pillow.</tw-passagedata><tw-passagedata pid="55" name="destroy the main mycelium links" tags="" position="950,6175" size="100,100">You destroy the main links in the mycelium network. This causes less communication between the animals and also less movement because they can&#39;t communicate with their hivemind.
+
+Cloie heads towards the lupi now. You are starting to get really worried and are chasing her. Cloie grabs something from her pockets and throws it at the lupi. They are conducted through the metallic material, and once it falls to the ground, the lupi becomes a different kind of energy and therefore dead.
+
+There is only the fungi left, but thanks to you, it&#39;s mostly dead. You finally catch up to Cloie, but she wishes you hadn&#39;t come for this.
+
+(button:)[[The Fall]]</tw-passagedata><tw-passagedata pid="56" name="The Fall" tags="" position="950,6300" size="100,100">You were unsure why Cloie went on after the plan to get past The Edge through Sparky. Now you&#39;re even more unsure as Cloie places her hands on the ground, but you feel like something bad is going to happen. Cloie feels hesitant to die, but she feels the time has come to make her sacrifice. You see now that this was her plan all along, she lied to you about her plan so she could do this. Cloie looks through her options of the sacrifices she could take. She lands on The Void below, already starting to give herself to it. You start to shout at her.
+
+(text-colour:cyan)[Cloie, what are you doing? THIS WASN&#39;T A PART OF OUR PLAN, WE WERE BOTH SUPPOSED TO DO THIS TOGETHER!]
+
+She looks back at you before rising into the air. Becoming a yellow light form of herself.
+
+You start running towards her until the ground that she was standing on crumbles away.
+
+(text-colour:cyan)[Cloie, please stay with me. I have no one else like you! I&#39;ll have no one to talk to. I don&#39;t want to go back if it means this!]
+
+The Dastardly Man is heading slowly towards Cloie, trying to stop her. You yell at the man above you, pleading him to stop. He doesn&#39;t listen; she doesn&#39;t listen; you&#39;re stuck on your own, without help. Cloie starts to join The Void with the mycelium, creating a gateway out of it.
+
+You sit down, hopeless, watching Cloie become a being made of yellow light. You then see her transform into a beacon as all her dark memories get fed to The Void. You can hear one last thing from Cloie.
+
+(text-colour:yellow)+(text-size:0.5)[Once I&#39;m gone, once I leave, be careful out there...]
+
+The world behind you is starting to break apart quickly now, so you decide to jump off the cliff edge and fall into The Void. The Void leads you deep down into The Trench, which is the only thing that&#39;s left. Soon, you can see the life that lives in The Trench, which is only the glowing fungi around you. Right before you reach the bottom of The Trench, you wake up, just like it was a bad dream.
+
+
+(button:)[[home]]</tw-passagedata><tw-passagedata pid="57" name="mindworld" tags="" position="1100,700" size="100,100">(text-colour:yellow)[Hello... Hello! 
+
+I wasn&#39;t expecting a new visitor to come to this place... 
+
+I don&#39;t even understand how someone can come here to the depths of this abandoned place. 
+
+Oh, sorry, I&#39;m a bit of a weirdo talking to someone unconscious. I just don&#39;t understand. I thought this place was gone! No one can reach something that doesn&#39;t exist, right? Yet I and others are abandoned here... ]
+
+
+(button:)[[wake up]]</tw-passagedata><tw-passagedata pid="58" name="home" tags="" position="950,6425" size="100,100">The pod that you were in opens. You look around, and you see that you&#39;re the only one here. Usually, you&#39;re moderated by scientists and doctors, but all you hear is silence. 
+
+You start to think about what just happened, you know it was real, there would be no way you could come up with a dream like that. You think that you could&#39;ve done something better, that you could&#39;ve saved Cloie from her fate, that you could&#39;ve saved the people in The Hollow. You feel ashamed and worried; the whole world, or at least it seemed like the whole world, crumbled away. You look out the window, thinking about what could have happened to the people as the world fell.
+
+[[Game Over|game over]]</tw-passagedata><tw-passagedata pid="59" name="game over" tags="" position="950,6550" size="100,100"># GAME OVER
+
+#### You got The Escaped Ending. This ending comprises only you escaping The Hollow while everyone else is trapped inside, and your friend Cloie dies. If you don&#39;t want this ending again, you may have to save them instead of yourself.
+
+*This is a demo of the game, so this ending is the only ending, other than losing in combat, of course. If you want me to keep making this game, then shake my body and shout at me to keep making it. Also, if you&#39;re a friend of mine, ask to play my game every once in a while and if I don&#39;t have anything new, give me a stare!*</tw-passagedata><tw-passagedata pid="60" name="stay at the village" tags="" position="650,2075" size="100,100">&lt;!--Unfinished choice--&gt;</tw-passagedata><tw-passagedata pid="61" name="fight the worm" tags="" position="675,2575" size="100,100">You get your bow and arrow ready, but you don&#39;t know how to aim with this weapon. Cloie immediately helps you aim, and you both kill the worm. You remember how to hold the bow for the next encounters.
+
+[[found a building?!]]</tw-passagedata><tw-passagedata pid="62" name="make peace with the worm" tags="" position="925,2575" size="100,100">The worm cannot think, let alone see your gesture. Cloie tries to shoot it down, but she panics and forgets to put fire on her arrow. You get eaten up by the worm first, and then Cloie joins you. Just before you both get digested, Cloie says her final words.
+
+(text-colour:yellow)[What the fuck were you thinking?!]</tw-passagedata><tw-passagedata pid="63" name="throw your lighter" tags="" position="675,3925" size="100,100">You throw the lighter with a good look on your face. Cloie looks scared and angry. She grabs you and tells you just how stupid you are.
+
+(text-colour:yellow)[Oh my god! I thought I had a friend who was smart, but it turns out you just made the dumbest decision ever! (text-colour:lime)[What did you do wrong?] You set all the enemies on fire... //cough// //cough// and you //cough// just trapped us in this circle. //cough// So now there&#39;s smoke everywhere and were going to die! //cough// //cough// Get down, there&#39;s less smoke, maybe the fire will go away, and we can get out of here.]
+
+However, it did not, as The Dastardly Man sends more enemies to keep the fire going. After sometime you and Cloie go unconscious.</tw-passagedata><tw-passagedata pid="64" name="shoot the emenies" tags="" position="925,3925" size="100,100">You shoot at the enemies until there is a clear path made for you. Cloie compliments you, saying your shooting was really good.
+
+[[back down to the main floor]]</tw-passagedata><tw-passagedata pid="65" name="command Sparky yourself" tags="" position="675,4675" size="100,100">You try to command Sparky to do Cloie&#39;s tricks, but he just looks at you, confused. You&#39;re not his owner, and he doesn&#39;t understand the greater context of what&#39;s happening, so he just floats in the air while the other lightning lupi electrocute you till your body is fried. Only when they head towards Cloie does the pet understand what is happening and tries to protect Cloie, but he gets pinned down and absorbed just before the lupi attack Cloie.</tw-passagedata><tw-passagedata pid="66" name="get Cloie to command Sparky" tags="" position="925,4675" size="100,100">Cloie is reluctant to, but you force her to get up and command Sparky. Sparky does the tricks, and he feels very happy about it. The other lightning lupi have been absorbed into him, and Sparky grows stronger.
+
+
+[[getting towards new shelter]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
